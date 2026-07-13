@@ -160,13 +160,7 @@ public class PostEventTests {
 
     @AfterEach
     public void cleanUp() throws SQLException {
-        if (id == null) {
-            return;
-        }
-
         boolean isDeleted = dbClient.isEventDeleted(id);
         assertTrue(isDeleted);
-
-        id = null;
     }
 }

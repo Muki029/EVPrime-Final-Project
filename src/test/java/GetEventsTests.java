@@ -103,13 +103,7 @@ public class GetEventsTests {
 
     @AfterEach
     public void cleanUp() throws SQLException {
-        if (id == null) {
-            return;
-        }
-
         boolean isDeleted = dbClient.isEventDeleted(id);
         assertTrue(isDeleted);
-
-        id = null;
     }
 }

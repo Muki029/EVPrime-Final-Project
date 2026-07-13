@@ -2,10 +2,10 @@ import client.EVPrimeClient;
 import data.SignUpLoginDataFactory;
 import io.restassured.response.Response;
 import models.request.SignUpLoginRequest;
+import models.response.LoginResponse;
 import objectBuilder.SignUpLoginObjectBuilder;
 import org.junit.jupiter.api.Test;
-import signupAndLoginResponse.LoginErrorsResponse;
-import signupAndLoginResponse.LoginResponse;
+import models.response.LoginErrorsResponse;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;

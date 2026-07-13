@@ -62,7 +62,7 @@ public class DeleteEventTests {
     public void UnsuccessfuldeleteWithoutTokenTest() {
         //delete event (delete event with the token id from before method)
         Response response = new EVPrimeClient()
-                .deleteEvent(id,"");
+                .deleteEvent(id, "");
 
         PostUpdateDeleteEventResponse responseBody = response.body().as(PostUpdateDeleteEventResponse.class);
 
@@ -70,16 +70,9 @@ public class DeleteEventTests {
         assertEquals("Not authenticated.", responseBody.getMessage());
     }
 
-
     @AfterEach
     public void cleanUp() throws SQLException {
-        if (id == null) {
-            return;
-        }
-
         boolean isDeleted = dbClient.isEventDeleted(id);
         assertTrue(isDeleted);
-        id = null;
     }
-
 }

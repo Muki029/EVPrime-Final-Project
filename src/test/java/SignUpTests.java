@@ -4,8 +4,8 @@ import io.restassured.response.Response;
 import models.request.SignUpLoginRequest;
 import objectBuilder.SignUpLoginObjectBuilder;
 import org.junit.jupiter.api.Test;
-import signupAndLoginResponse.SignUpResponse;
-import signupAndLoginResponse.SignupErrorsResponse;
+import models.response.SignUpResponse;
+import models.response.SignupErrorsResponse;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;

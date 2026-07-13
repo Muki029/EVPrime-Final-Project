@@ -1,15 +1,14 @@
-package signupAndLoginResponse;
+package models.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 
-public class SignUpErrors {
-
-    String email;
+public class LoginErrors {
+    String credentials;
 
 }
